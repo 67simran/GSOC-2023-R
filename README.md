@@ -16,7 +16,7 @@ library(VedicDateTime)
 #### Project: Enhancing the Functionality and Accuracy of the VedicDateTime R Package
 
 
-#### Easy Test
+### Easy Test
 
 library(VedicDateTime)
 
@@ -34,9 +34,24 @@ get_tithi_name(jd, place)
 day1 <- gregorian_to_jd(1,1,2023)
 day2 <- gregorian_to_jd(1,1,2024)
 days <- seq(day1,day2)
+
 #### Sunrise for 2023 in New Delhi
 sunrise <- sapply(X=days, FUN=sunrise, place = c(28.70, 77.10, +5.5))
 plot(days,sunrise[2,])
+
 #### Lagna numbers for 2023
 lagna <- sapply(X=days, FUN=lagna)
 plot(days,lagna)
+
+### Medium Test
+Some possible updates or new features that could be added to the VedicDateTime package:
+
+   1. Support for additional Vedic calendars: The current version of the VedicDateTime package only supports the Hindu lunar calendar. Adding support for other Vedic calendars, such as the Solar Hijri calendar or the Javanese calendar, would increase the versatility and usefulness of the package.
+
+   2.  Time zone conversion: Currently, the package assumes that all dates and times are in the same time zone. Adding functionality for time zone conversion would allow users to work with dates and times across different time zones.
+
+   3.  Integration with other packages: The VedicDateTime package could be integrated with other packages that work with time-series data, such as the xts or zoo packages. This would allow users to easily convert between Western and Vedic dates in the context of time-series analysis.
+
+   4. Support for Vedic astrology: Vedic astrology is an important application of Vedic time-keeping. Adding functionality to the package for working with Vedic astrology, such as computing planetary positions or generating birth charts, would be a valuable addition for users interested in this field.
+
+   5. More robust error handling: As with any software package, errors can occur when working with the VedicDateTime package. Improving the error handling and providing more informative error messages would make it easier for users to troubleshoot issues and ensure the accuracy of their results.
