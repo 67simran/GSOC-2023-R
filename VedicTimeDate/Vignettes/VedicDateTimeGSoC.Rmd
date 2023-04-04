@@ -2,7 +2,7 @@
 title: "VedicDateTimeGSoC"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Power of number}
+  %\VignetteIndexEntry{VedicDateTime}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
